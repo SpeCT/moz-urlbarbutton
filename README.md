@@ -1,6 +1,8 @@
 UrlbarButton for Mozilla Add-on SDK jpm Version
 =======
 
+[![Gyazo](https://i.gyazo.com/8fbc996cf9c11cfdcb3efc0d7855bb6c.png)](https://gyazo.com/8fbc996cf9c11cfdcb3efc0d7855bb6c)
+
 The UrlbarButton module allows for easy adding of buttons to the urlbar in Firefox.
 
 This Repository is Version supported [jpm](https://github.com/mozilla/jpm).
