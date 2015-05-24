@@ -34,10 +34,10 @@ Follow the Add-on SDK's documentation for [third party packages](https://develop
 
 ## Options
 
-* **id** - a string identifier that identifies the specific button.
-* **image** - a path to an image for the button. (optional)
-* ~~ **tooltip** - a tooltip text for the button. (optional) ~~ Not support. future.
-* **onClick** - a callback to fire on a click on the button. (optional)
+- **id** - a string identifier that identifies the specific button.
+- **image** - a path to an image for the button. (optional)
+- ~~**tooltip** - a tooltip text for the button. (optional)~~ Not support. future.
+- **onClick** - a callback to fire on a click on the button. (optional)
 
 ### Option syntax: onClick
 
