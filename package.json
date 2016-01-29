@@ -1,9 +1,23 @@
 {
     "name": "urlbarbutton",
+    "version": "1.0.0",
     "description": "URLBar Buttons for Jetpacks",
-    "keywords": ["urlbar", "urlbarbutton", "button", "ui"],
+    "license": "MIT",
+    "keywords": [
+      "urlbar", "urlbarbutton", "button", "ui", "jetpack"
+    ],
     "author": "Pelle Wessman (http://kodfabrik.se/) <pelle@kodfabrik.se>",
-    "version": "0.7.0",
+    "contributors": [
+      "Pelle Wessman (http://kodfabrik.se/) <pelle@kodfabrik.se>",
+      "Iurii Proshchenko (https://github.com/SpeCT/) <spect.man@gmail.com>",
+      "pastak (http://pastak.hatenablog.com)"
+    ],
+    "repository": {
+      "type": "git",
+      "url": "git://github.com/SpeCT/moz-urlbarbutton.git"
+    },
     "main": "lib/urlbarbutton.js",
-    "license": "The MIT License (http://www.opensource.org/licenses/mit-license.php)"
+    "engines": {
+      "firefox": ">=38.0a1"
+    }
 }

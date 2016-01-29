@@ -7,38 +7,39 @@ The UrlbarButton module allows for easy adding of buttons to the urlbar in Firef
 
 This Repository is Version supported [jpm](https://github.com/mozilla/jpm).
 
-[Original Repository is here](https://github.com/SpeCT/moz-urlbarbutton)
+[Original Repository is here](https://github.com/voxpelli/moz-urlbarbutton)
 
 ## How to use
 
-Follow the Add-on SDK's documentation for [third party packages](https://developer.mozilla.org/en-US/Add-ons/SDK/Tutorials/Using_third-party_modules_%28jpm%29).
+```bash
+npm install --save moz-urlbarbutton
+```
 
-### `package.json`
+```js
+var {data} = require('sdk/self');
+var UrlbarButton = require('urlbarbutton');
 
-    "dependencies": {
-      "urlbarbutton":"pastak/moz-urlbarbutton#support-jpm"
-    }
-
-### `main.js`
-
-    var urlbarButton = require('urlbarbutton')
-
-    exports.main = function () {
-      button = urlbarButton({
-        id : 'foobar-button',
-        image : data.url("foobar-button.png"),
-        onClick : doTheThing,
-      });
-    };
+button = new UrlbarButton({
+  id: 'foobar-button',
+  image: data.url('foobar-button.png'),
+  onClick: function(tabId, event) {
+  }
+});
+```
 
 
 ## Options
 
-- **id** - a string identifier that identifies the specific button.
-- **image** - a path to an image for the button. (optional)
-- ~~**tooltip** - a tooltip text for the button. (optional)~~ Not support. future.
-- **onClick** - a callback to fire on a click on the button. (optional)
+| option       | description
+|---------------|---------------
+| id        | a string identifier that identifies the specific button.
+| image     | optional path to an image for the button.
+| tooltip   | optional tooltip text for the button.
+| onClick   | optional callback to fire on a click on the button.
 
-### Option syntax: onClick
 
-Should be a function. Is called with the URL of the current page as a single argument and has the document of the page that is checked as its context.
+## Contributors
+
+* [Pelle Wessman](http://kodfabrik.se/)
+* [Iurii Proshchenko](https://github.com/SpeCT/)
+* [pastak](http://pastak.hatenablog.com)
